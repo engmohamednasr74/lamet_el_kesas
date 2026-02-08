@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");
+
+.gpt-selected-tooltip {
+  position: fixed;
+  z-index: 10000;
+  pointer-events: none;
+  background-color: hsl(225, 88%, 53%);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+  white-space: nowrap;
+  display: block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin: -2px 0px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Hovered state: Uses outline on parent for standard elements */
+[data-lov-hovered][data-lov-primary]:not(input):not(img):not(textarea):not(
+    select
+  ):not(video):not(audio):not(iframe):not(canvas):not(svg) {
+  outline: 2px solid hsl(225, 88%, 53%) !important;
+  outline-offset: 0 !important;
+}
+
+[data-lov-hovered]:not([data-lov-primary]):not(input):not(img):not(
+    textarea
+  ):not(select):not(video):not(audio):not(iframe):not(canvas):not(svg) {
+  outline: 2px dotted hsl(225, 88%, 53%) !important;
+  outline-offset: 0 !important;
+}
+
+[data-lov-selected][data-lov-primary]:not(input):not(img):not(textarea):not(
+    select
+  ):not(video):not(audio):not(iframe):not(canvas):not(svg) {
+  outline: 1px solid hsl(225, 88%, 53%) !important;
+  outline-offset: 1px !important;
+}
+
+/* Secondary selected instances - dotted border */
+[data-lov-selected]:not([data-lov-primary]):not(input):not(img):not(
+    textarea
+  ):not(select):not(video):not(audio):not(iframe):not(canvas):not(svg) {
+  outline: 1px dotted hsl(225, 88%, 53%) !important;
+  outline-offset: 1px !important;
+}
+
+/* Primary replaced elements - solid */
+:is(
+    input,
+    img,
+    textarea,
+    select,
+    video,
+    audio,
+    iframe,
+    canvas,
+    svg
+  )[data-lov-hovered][data-lov-primary] {
+  outline: 2px solid hsl(225, 88%, 53%) !important;
+  outline-offset: 0 !important;
+}
+
+/* Secondary replaced elements - dotted */
+:is(
+    input,
+    img,
+    textarea,
+    select,
+    video,
+    audio,
+    iframe,
+    canvas,
+    svg
+  )[data-lov-hovered]:not([data-lov-primary]) {
+  outline: 2px dotted hsl(225, 88%, 53%) !important;
+  outline-offset: 0 !important;
+}
+
+/* Primary selected replaced elements - solid */
+:is(
+    input,
+    img,
+    textarea,
+    select,
+    video,
+    audio,
+    iframe,
+    canvas,
+    svg
+  )[data-lov-selected][data-lov-primary] {
+  outline: 1px solid hsl(225, 88%, 53%) !important;
+  outline-offset: 1px !important;
+}
+
+/* Secondary selected replaced elements - dotted */
+:is(
+    input,
+    img,
+    textarea,
+    select,
+    video,
+    audio,
+    iframe,
+    canvas,
+    svg
+  )[data-lov-selected]:not([data-lov-primary]) {
+  outline: 1px dotted hsl(225, 88%, 53%) !important;
+  outline-offset: 1px !important;
+}
+
+/* Remove outline from contenteditable selected elements to avoid conflicts */
+[data-lov-selected][contenteditable] {
+  outline: none !important;
+}
+
+/* Full-width elements use different offset for better visibility */
+[data-lov-hovered][data-full-width]:not(input):not(img):not(textarea):not(
+    select
+  ):not(video):not(audio):not(iframe):not(canvas):not(svg),
+[data-lov-selected][data-full-width]:not(input):not(img):not(textarea):not(
+    select
+  ):not(video):not(audio):not(iframe):not(canvas):not(svg) {
+  outline-offset: -5px !important;
+}
+
+/* Full-width offset for replaced elements */
+:is(input, img, textarea, select, video, audio, iframe, canvas, svg):is(
+    [data-lov-hovered],
+    [data-lov-selected]
+  )[data-full-width] {
+  outline-offset: -5px !important;
+}
+
+/* Replaced elements inside overflow-hidden parents - hide their outline and style the parent instead */
+:is([class*="overflow-hidden"], [class*="overflow-clip"])
+  > :is(img, video, iframe, canvas):is(
+    [data-lov-hovered],
+    [data-lov-selected]
+  ) {
+  outline: none !important;
+}
+
+/* Apply outline to overflow-hidden parent when it contains a hovered/selected replaced element */
+:is([class*="overflow-hidden"], [class*="overflow-clip"]):has(
+  > :is(img, video, iframe, canvas)[data-lov-hovered]
+) {
+  outline: 2px solid hsl(225, 88%, 53%) !important;
+  outline-offset: 0 !important;
+}
+
+:is([class*="overflow-hidden"], [class*="overflow-clip"]):has(
+  > :is(img, video, iframe, canvas)[data-lov-selected]
+) {
+  outline: 1px solid hsl(225, 88%, 53%) !important;
+  outline-offset: 1px !important;
+}
+
+/* Child element highlighting on hover - exclude SVGs and replaced elements */
+[data-lov-hovered]
+  > *:not(input):not(img):not(textarea):not(select):not(video):not(audio):not(
+    iframe
+  ):not(canvas):not(svg) {
+  outline: 1px dotted hsl(225, 88%, 53%) !important;
+  outline-offset: 1px !important;
+}
+

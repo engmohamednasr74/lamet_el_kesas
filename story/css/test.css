@@ -1,0 +1,233 @@
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* إخفاء الoverlay لما الفيديو يشتغل */
+.video-container.playing .play-overlay {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* إظهار controls لما يشتغل */
+.video-container.playing video {
+  controls: true;
+}
+
+/* hover إضافي للحاوية كلها */
+.video-container:hover .play-overlay {
+  background-color: #0000004d;
+}
+
+/* Custom Controls Styles */
+#custom-controls {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  flex-direction: row-reverse;
+}
+
+#custom-controls button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+#custom-controls svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  stroke: hsl(var(--primary)); /* لون الـ SVG: --primary (ذهبي) */
+}
+
+/* Progress Bar */
+#progress-bar {
+  --progress-height: 0.5rem;
+  --thumb-size: 1rem;
+  height: var(--progress-height);
+  background: hsl(0 0% 100%); /* خلفية أبيض (الغير محمل) */
+  border-radius: 9999px; /* rounded full */
+  rotate: 180deg;
+}
+
+/* Volume Slider (عمودي) */
+#volume-slider {
+  height: 0.5rem; /* سمك مشابه للـ progress */
+  background: hsl(0 0% 100%); /* خلفية أبيض */
+  border-radius: 9999px;
+  transition: width 0.3s ease; /* للتوسع عند hover */
+}
+
+#time-display {
+  color: #fff; /* لون النص الأساسي */
+}
+#volume-slider {
+  rotate: 180deg;
+}
+
+/* إظهار الـ controls لما الفيديو playing أو hover */
+.video-container.playing #custom-controls,
+.video-container:hover #custom-controls {
+  opacity: 1;
+}
+
+/* Hidden classes */
+.hidden {
+  display: none;
+}
+
+/* إخفاء الـ default video controls قسرياً */
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+video::-webkit-media-controls-enclosure {
+  display: none !important;
+}
+
+video::-webkit-media-controls-panel {
+  display: none !important;
+}
+
+video::-moz-media-controls {
+  display: none !important;
+}
+
+video::cue {
+  display: none !important; /* لو في subtitles */
+}
+
+/* لـ Firefox وغيرها */
+video {
+  -moz-appearance: none !important;
+  appearance: none !important;
+}
+
+/* Media Query لتصغير #custom-controls عند عرض ≤ 499px */
+@media (max-width: 499px) {
+  #custom-controls {
+    padding: 0.25rem 0.5rem; /* تصغير الـ padding عشان الشريط يبقى رفيع */
+    position: absolute;
+    bottom: 20px;
+  }
+
+  #custom-controls button {
+    padding: 0.25rem; /* أزرار أصغر */
+  }
+
+  #custom-controls svg {
+    width: 1rem; /* icons أصغر (كان 1.5rem) */
+    height: 1rem;
+  }
+
+  #progress-bar {
+    --progress-height: 0.3rem; /* شريط الـ progress رفيع أكتر */
+    --thumb-size: 0.8rem; /* الـ thumb (الدائرة) أصغر */
+  }
+
+  #volume-slider {
+    height: 0.3rem; /* volume slider رفيع زي الـ progress */
+  }
+
+  #time-display {
+    font-size: 0.75rem; /* نص الوقت أصغر عشان يبقى مناسب */
+  }
+}
+
+/* Media Query لتصغير #custom-controls أكتر عند عرض ≤ 449px */
+@media (max-width: 449px) {
+  #custom-controls {
+    padding: 0.2rem 0.4rem; /* تصغير الـ padding أكتر عشان الشريط يبقى رفيع جدًا */
+  }
+
+  #custom-controls button {
+    padding: 0.2rem; /* أزرار أصغر */
+  }
+
+  #custom-controls svg {
+    width: 0.8rem; /* icons أصغر (كان 1rem في 499px) */
+    height: 0.8rem;
+  }
+
+  #progress-bar {
+    --progress-height: 0.25rem; /* شريط الـ progress رفيع أكتر */
+    --thumb-size: 0.6rem; /* الـ thumb (الدائرة) أصغر */
+  }
+
+  #volume-slider {
+    height: 0.25rem; /* volume slider رفيع زي الـ progress */
+  }
+
+  #time-display {
+    font-size: 0.65rem; /* نص الوقت أصغر عشان يبقى مناسب */
+  }
+  .container {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  #time-display {
+    display: none;
+  }
+}
+
+/* Media Query لتصغير #custom-controls أكتر عند عرض ≤ 433px */
+@media (max-width: 433px) {
+  #custom-controls {
+    padding: 0.15rem 0.3rem; /* تصغير الـ padding أكتر عشان الشريط يبقى رفيع جدًا */
+  }
+
+  #custom-controls button {
+    padding: 0.15rem; /* أزرار أصغر */
+  }
+
+  #custom-controls svg {
+    width: 0.7rem; /* icons أصغر (كان 0.8rem في 449px) */
+    height: 0.7rem;
+  }
+
+  #progress-bar {
+    --progress-height: 0.2rem; /* شريط الـ progress رفيع أكتر */
+    --thumb-size: 0.5rem; /* الـ thumb (الدائرة) أصغر */
+  }
+
+  #volume-slider {
+    height: 0.2rem; /* volume slider رفيع زي الـ progress */
+  }
+
+  #time-display {
+    font-size: 0.6rem; /* نص الوقت أصغر عشان يبقى مناسب */
+  }
+}
+
+/* Media Query لتصغير #custom-controls أكتر عند عرض ≤ 381px */
+@media (max-width: 381px) {
+  #custom-controls {
+    padding: 0.1rem 0.2rem; /* تصغير الـ padding أكتر عشان الشريط يبقى رفيع جدًا */
+    bottom: 30px;
+  }
+
+  #custom-controls button {
+    padding: 0.1rem; /* أزرار أصغر */
+  }
+
+  #custom-controls svg {
+    width: 0.6rem; /* icons أصغر (كان 0.7rem في 433px) */
+    height: 0.6rem;
+  }
+
+  #progress-bar {
+    --progress-height: 0.15rem; /* شريط الـ progress رفيع أكتر */
+    --thumb-size: 0.4rem; /* الـ thumb (الدائرة) أصغر */
+  }
+
+  #volume-slider {
+    height: 0.15rem; /* volume slider رفيع زي الـ progress */
+  }
+
+  #time-display {
+    font-size: 0.55rem; /* نص الوقت أصغر عشان يبقى مناسب */
+  }
+  #volume-slider,
+  #volume-btn {
+    display: none;
+  }
+}
