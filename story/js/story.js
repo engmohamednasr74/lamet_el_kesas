@@ -26,19 +26,19 @@ document.addEventListener('DOMContentLoaded', () => {
             button.innerHTML = `
                 <div class="flex items-center gap-4">
                     <div class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0 bg-primary/10 group-hover:bg-primary/20 transition-colors">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="color:#e4c567;">
                             <polygon points="6 3 20 12 6 21 6 3"></polygon>
                         </svg>
                     </div>
                     <div class="flex-1 min-w-0">
                         <div class="flex items-center gap-2 mb-1">
-                            <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-primary/10 text-primary uppercase">الحلقة ${episode.num}</span>
+                            <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-primary/10 text-primary uppercase" style="color:#fff;">الحلقة ${episode.num}</span>
                             <div class="flex items-center gap-1 text-xs opacity-60">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                                <span>${episode.duration}</span>
+                                <span>${episode.duration} 'غير محددد'</span>
                             </div>
                         </div>
-                        <h3 class="font-bold text-base truncate text-foreground">${episode.title}</h3>
+                        <h3 class="font-bold text-base truncate text-foreground" style="color:#e4c567;">${episode.title}</h3>
                         <h5 class=" truncate text-sm text-muted-foreground">${episode.eps_des}</h5>
                     </div>
                 </div>
@@ -202,29 +202,38 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         function playEpisode(episode, btnElement) {
-            if (currentEpisode && currentEpisode.video === episode.video) {
-                // لو نفس الحلقة، بس شغل بدون إعادة load
-                videoPlayer.play().catch(e => console.log("Auto-play prevented"));
-            } else {
-                // لو حلقة جديدة، غير الـ src و load
-                videoPlayer.src = episode.video;
-                videoPlayer.load();
-                videoPlayer.controls = false; // تأكيد إخفاء بعد الـ load
-                videoPlayer.play().catch(e => console.log("Auto-play prevented"));
-                currentEpisode = episode; // تحديث الحلقة الحالية
-            }
+            // إظهار نص التحميل فورًا
+            const loadingText = document.getElementById('loading-text');
+            if (loadingText) loadingText.style.display = 'flex';
 
-            if (videoContainer) videoContainer.classList.add('playing');
+            // تغيير مصدر الفيديو
+            videoPlayer.src = episode.video;
+            videoPlayer.load(); // بدء التحميل
 
+            // عندما يتحمل metadata (أسرع حدث)
+            videoPlayer.onloadedmetadata = () => {
+                if (loadingText) loadingText.style.display = 'none'; // إخفاء التحميل
+                videoPlayer.play().catch(e => console.log("Auto-play prevented:", e));
+                if (videoContainer) videoContainer.classList.add('playing');
+            };
+
+            // احتياطي لو metadata مش جاهز فورًا
+            videoPlayer.oncanplay = () => {
+                if (loadingText) loadingText.style.display = 'none';
+                videoPlayer.play().catch(e => console.log("Auto-play prevented:", e));
+            };
+
+            // باقي الكود بتاعك (تحديث العنوان، تمييز الزر، إلخ)
             currentTitleDisplay.textContent = `أنت تشاهد الآن: ${episode.title}`;
 
-            // تمييز الزر
             document.querySelectorAll('#episode-list button').forEach(b => {
                 b.classList.remove('bg-primary/10', 'border-primary/50', 'ring-2', 'ring-primary/20');
             });
             if (btnElement) {
                 btnElement.classList.add('bg-primary/10', 'border-primary/50', 'ring-2', 'ring-primary/20');
             }
+
+            currentEpisode = episode;
         }
 
     } else {
