@@ -229,100 +229,99 @@ const stories = {
         ]
     },
 
+    // قصص الأنبياء بالصلصال
+    6: {
+        title: 'قصص الأنبياء بالصلصال',
+        description: 'قصص الأنبياء بالصلصال، رحلة إيمانية ممتعة للأطفال مع عبر أخلاقية.',
+        episodes: [
+            { num: 1, title: 'أغنية المقدمة', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Prophets_stories_in_clay/Prophets_stories_in_clay_intro.mp3', eps_des: 'مقدمة موسيقية لقصص الأنبياء.' },
+            { num: 2, title: 'أدم', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Prophets_stories_in_clay/Prophets_stories_in_clay_eps1.mp4', eps_des: 'خلق آدم ودخوله الجنة.' },
+            { num: 3, title: 'أيوب', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Prophets_stories_in_clay/Prophets_stories_in_clay_eps2.mp4', eps_des: 'صبر أيوب على البلاء والشفاء.' },
+            { num: 4, title: 'عزير', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Prophets_stories_in_clay/Prophets_stories_in_clay_eps3.mp44', eps_des: 'معجزة إحياء عزير بعد موته.' },
+            { num: 5, title: 'هود', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Prophets_stories_in_clay/Prophets_stories_in_clay_eps4.mp4', eps_des: 'دعوة هود لقوم عاد وعقابهم.' },
+            { num: 6, title: 'نوح', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Prophets_stories_in_clay/Prophets_stories_in_clay_eps5.mp4', eps_des: 'بناء سفينة نوح والطوفان.' },
+            { num: 7, title: 'صالح', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Prophets_stories_in_clay/Prophets_stories_in_clay_eps6.mp4', eps_des: 'معجزة ناقة صالح وعقاب ثمود.' },
+            { num: 8, title: 'داود', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Prophets_stories_in_clay/Prophets_stories_in_clay_eps7.mp4', eps_des: 'معجزة داود في قتل جالوت.' },
+            { num: 9, title: 'يونس 1', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Prophets_stories_in_clay/Prophets_stories_in_clay_eps8.mp4', eps_des: 'دعوة يونس وابتلاع الحوت.' },
+            { num: 10, title: 'يونس 2', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Prophets_stories_in_clay/Prophets_stories_in_clay_eps9.mp4', eps_des: 'توبة يونس ونجاته من الحوت.' },
+            { num: 11, title: 'عيسى', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Prophets_stories_in_clay/Prophets_stories_in_clay_eps10.mp4', eps_des: 'ولادة عيسى ومعجزاته الإلهية.' },
+            { num: 12, title: 'ابراهيم', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Prophets_stories_in_clay/Prophets_stories_in_clay_eps11.mp4', eps_des: 'إبراهيم وتحطيم الأصنام.' },
+            { num: 13, title: 'اسماعيل', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Prophets_stories_in_clay/Prophets_stories_in_clay_eps12.mp4', eps_des: 'قصة إسماعيل وذبح الرؤيا.' },
+            { num: 14, title: 'شعيب', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Prophets_stories_in_clay/Prophets_stories_in_clay_eps13.mp4', eps_des: 'دعوة شعيب لقوم مدين.' },
+            { num: 15, title: 'يعقوب', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Prophets_stories_in_clay/Prophets_stories_in_clay_eps14.mp4', eps_des: 'قصة يعقوب وأبنائه.' },
+            { num: 16, title: 'يوسف', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Prophets_stories_in_clay/Prophets_stories_in_clay_eps15.mp4', eps_des: 'رؤيا يوسف وصبره في السجن.' },
+            { num: 17, title: 'زكريا', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Prophets_stories_in_clay/Prophets_stories_in_clay_eps16.mp4', eps_des: 'دعاء زكريا لولد يحيى.' },
+            { num: 18, title: 'سليمان 1', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Prophets_stories_in_clay/Prophets_stories_in_clay_eps17.mp4', eps_des: 'ملك سليمان وتسخير الجن.' },
+            { num: 19, title: 'سليمان 2', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Prophets_stories_in_clay/Prophets_stories_in_clay_eps18.mp4', eps_des: 'هدهد سليمان وملكة سبأ.' },
+            { num: 20, title: 'موسى', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Prophets_stories_in_clay/Prophets_stories_in_clay_eps19.mp4', eps_des: 'معجزات موسى أمام فرعون.' },
+            { num: 21, title: 'سيدنا محمد 1', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Prophets_stories_in_clay/Prophets_stories_in_clay_eps20.mp4', eps_des: 'طفولة النبي محمد صلى الله عليه وسلم.' },
+            { num: 22, title: 'سيدنا محمد 2', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Prophets_stories_in_clay/Prophets_stories_in_clay_eps21.mp4', eps_des: 'بعثة النبي ودعوته للإسلام.' },
+            { num: 23, title: 'الحجر الاسود', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Prophets_stories_in_clay/Prophets_stories_in_clay_eps22.mp4', eps_des: 'قصة الحجر الأسود وبناء الكعبة.' },
+            { num: 24, title: 'غار ثور 1', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Prophets_stories_in_clay/Prophets_stories_in_clay_eps23.mp4', eps_des: 'هجرة النبي لغار ثور.' },
+            { num: 25, title: 'غار ثور 2', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Prophets_stories_in_clay/Prophets_stories_in_clay_eps24.mp4', eps_des: 'معجزة في غار ثور وحماية الله.' }
+        ]
+    },
 
-    // // قصص القرآن بالصلصال
-    // 6: {
-    //     title: 'قصص القرآن بالصلصال',
-    //     description: 'قصص قرآنية مشوقة بالصلصال، تعلم العبر الأخلاقية للأطفال بطريقة فنية.',
-    //     episodes: [
-    //         { num: 1, title: 'اغنية المقدمة', duration: '20 دقيقة', video: 'vid/Quran_Claymation/Quran_Claymation_eps1.mp4', eps_des: 'مقدمة موسيقية جذابة لقصص القرآن.' },
-    //         { num: 2, title: 'اغنية النهاية', duration: '20 دقيقة', video: 'vid/Quran_Claymation/Quran_Claymation_eps2.mp4', eps_des: 'خاتمة موسيقية تعزز العبر الإيمانية.' },
-    //         { num: 3, title: 'ذو القرنين', duration: '20 دقيقة', video: 'vid/Quran_Claymation/Quran_Claymation_eps3.mp4', eps_des: 'رحلة ذو القرنين وبناء السد العظيم.' },
-    //         { num: 4, title: 'اصحاب الغار', duration: '20 دقيقة', video: 'vid/Quran_Claymation/Quran_Claymation_eps4.mp4', eps_des: 'قصة أصحاب الغار ومعجزة النوم الطويل.' },
-    //         { num: 5, title: 'اصحاب السبت', duration: '20 دقيقة', video: 'vid/Quran_Claymation/Quran_Claymation_eps5.mp4', eps_des: 'عقاب أصحاب السبت لمخالفتهم الأمر الإلهي.' },
-    //         { num: 6, title: 'السامرى والعجل 1', duration: '20 دقيقة', video: 'vid/Quran_Claymation/Quran_Claymation_eps6.mp4', eps_des: 'صنع السامري للعجل الذهبي الأول.' },
-    //         { num: 7, title: 'السامرى والعجل 2', duration: '20 دقيقة', video: 'vid/Quran_Claymation/Quran_Claymation_eps7.mp4', eps_des: 'نهاية قصة السامري وعقاب العجل.' },
-    //         { num: 8, title: 'اصحاب الرس', duration: '20 دقيقة', video: 'vid/Quran_Claymation/Quran_Claymation_eps8.mp4', eps_des: 'قصة أصحاب الرس وهلاكهم بالبئر.' },
-    //         { num: 9, title: 'البقرة الصفراء', duration: '20 دقيقة', video: 'vid/Quran_Claymation/Quran_Claymation_eps9.mp4', eps_des: 'معجزة البقرة الصفراء وكشف القتل.' },
-    //         { num: 10, title: 'اصحاب الايثار', duration: '20 دقيقة', video: 'vid/Quran_Claymation/Quran_Claymation_eps10.mp4', eps_des: 'قصة أصحاب الإيثار والكرم الإلهي.' },
-    //         { num: 11, title: 'الاجتهاد', duration: '20 دقيقة', video: 'vid/Quran_Claymation/Quran_Claymation_eps11.mp4', eps_des: 'عبرة الاجتهاد في طلب العلم.' },
-    //         { num: 12, title: 'اصحاب الكهف', duration: '20 دقيقة', video: 'vid/Quran_Claymation/Quran_Claymation_eps12.mp4', eps_des: 'قصة أصحاب الكهف والنوم الطويل.' },
-    //         { num: 13, title: 'الملك طالوت', duration: '20 دقيقة', video: 'vid/Quran_Claymation/Quran_Claymation_eps13.mp4', eps_des: 'اختيار طالوت ملكًا ومعجزة التابوت.' },
-    //         { num: 14, title: 'اصحاب الجنة', duration: '20 دقيقة', video: 'vid/Quran_Claymation/Quran_Claymation_eps14.mp4', eps_des: 'عبرة أصحاب الجنة من البخل.' },
-    //         { num: 15, title: 'الفقر', duration: '20 دقيقة', video: 'vid/Quran_Claymation/Quran_Claymation_eps15.mp4', eps_des: 'قصة الفقر واختبار الإيمان.' },
-    //         { num: 16, title: 'اصحاب الاخدود', duration: '20 دقيقة', video: 'vid/Quran_Claymation/Quran_Claymation_eps16.mp4', eps_des: 'صبر أصحاب الأخدود أمام النار.' },
-    //         { num: 17, title: 'الدعاء', duration: '20 دقيقة', video: 'vid/Quran_Claymation/Quran_Claymation_eps17.mp4', eps_des: 'قوة الدعاء وإجابة الله.' },
-    //         { num: 18, title: 'اصحاب القرية 1', duration: '20 دقيقة', video: 'vid/Quran_Claymation/Quran_Claymation_eps18.mp4', eps_des: 'دعوة أصحاب القرية للإيمان.' },
-    //         { num: 19, title: 'اصحاب القرية 2', duration: '20 دقيقة', video: 'vid/Quran_Claymation/Quran_Claymation_eps19.mp4', eps_des: 'عقاب أصحاب القرية للكفر.' },
-    //         { num: 20, title: 'ابليس والرجل الصالح', duration: '20 دقيقة', video: 'vid/Quran_Claymation/Quran_Claymation_eps20.mp4', eps_des: 'إغواء إبليس للرجل الصالح.' },
-    //         { num: 21, title: 'لقمان الحكيم', duration: '20 دقيقة', video: 'vid/Quran_Claymation/Quran_Claymation_eps21.mp4', eps_des: 'حكمة لقمان ونصائحه لابنه.' },
-    //         { num: 22, title: 'مؤمن ال فرعون', duration: '20 دقيقة', video: 'vid/Quran_Claymation/Quran_Claymation_eps22.mp4', eps_des: 'إيمان مؤمن آل فرعون سرًا.' },
-    //         { num: 23, title: 'موسى والخضر', duration: '20 دقيقة', video: 'vid/Quran_Claymation/Quran_Claymation_eps23.mp4', eps_des: 'لقاء موسى والخضر وأسراره.' },
-    //         { num: 24, title: 'قارون', duration: '20 دقيقة', video: 'vid/Quran_Claymation/Quran_Claymation_eps24.mp4', eps_des: 'غرور قارون وخسفه بالأرض.' },
-    //         { num: 25, title: 'سبأ', duration: '20 دقيقة', video: 'vid/Quran_Claymation/Quran_Claymation_eps25.mp4', eps_des: 'قصة سبأ وسد مأرب العظيم.' },
-    //         { num: 26, title: 'صاحب الجنتين', duration: '20 دقيقة', video: 'vid/Quran_Claymation/Quran_Claymation_eps26.mp4', eps_des: 'عبرة صاحب الجنتين من الكفر.' },
-    //         { num: 27, title: 'زينب بنت جحش', duration: '20 دقيقة', video: 'vid/Quran_Claymation/Quran_Claymation_eps27.mp4', eps_des: 'قصة زينب ونزول آية التبني.' }
-    //     ]
-    // },
+    // قصص القرآن بالصلصال
+    7: {
+        title: 'قصص القرآن بالصلصال',
+        description: 'قصص قرآنية مشوقة بالصلصال، تعلم العبر الأخلاقية للأطفال بطريقة فنية.',
+        episodes: [
+            { num: 1, title: 'اغنية المقدمة', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Quran_stories_in_clay/Quran_stories_in_clay_intro.mp3', eps_des: 'مقدمة موسيقية جذابة لقصص القرآن.' },
+            { num: 2, title: 'اغنية النهاية', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Quran_stories_in_clay/Quran_stories_in_clay_outro.mp3', eps_des: 'خاتمة موسيقية تعزز العبر الإيمانية.' },
+            { num: 3, title: 'ذو القرنين', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Quran_stories_in_clay/Quran_stories_in_clay_eps1.mp4', eps_des: 'رحلة ذو القرنين وبناء السد العظيم.' },
+            { num: 4, title: 'اصحاب الغار', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Quran_stories_in_clay/Quran_stories_in_clay_eps2.mp4', eps_des: 'قصة أصحاب الغار ومعجزة النوم الطويل.' },
+            { num: 5, title: 'اصحاب السبت', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Quran_stories_in_clay/Quran_stories_in_clay_eps3.mp4', eps_des: 'عقاب أصحاب السبت لمخالفتهم الأمر الإلهي.' },
+            { num: 6, title: 'السامرى والعجل 1', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Quran_stories_in_clay/Quran_stories_in_clay_eps4.mp4', eps_des: 'صنع السامري للعجل الذهبي الأول.' },
+            { num: 7, title: 'السامرى والعجل 2', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Quran_stories_in_clay/Quran_stories_in_clay_eps5.mp4', eps_des: 'نهاية قصة السامري وعقاب العجل.' },
+            { num: 8, title: 'اصحاب الرس', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Quran_stories_in_clay/Quran_stories_in_clay_eps6.mp4', eps_des: 'قصة أصحاب الرس وهلاكهم بالبئر.' },
+            { num: 9, title: 'البقرة الصفراء', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Quran_stories_in_clay/Quran_stories_in_clay_eps7.mp4', eps_des: 'معجزة البقرة الصفراء وكشف القتل.' },
+            { num: 10, title: 'اصحاب الايثار', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Quran_stories_in_clay/Quran_stories_in_clay_eps8.mp4', eps_des: 'قصة أصحاب الإيثار والكرم الإلهي.' },
+            { num: 11, title: 'الاجتهاد', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Quran_stories_in_clay/Quran_stories_in_clay_eps9.mp4', eps_des: 'عبرة الاجتهاد في طلب العلم.' },
+            { num: 12, title: 'اصحاب الكهف', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Quran_stories_in_clay/Quran_stories_in_clay_eps10.mp4', eps_des: 'قصة أصحاب الكهف والنوم الطويل.' },
+            { num: 13, title: 'الملك طالوت', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Quran_stories_in_clay/Quran_stories_in_clay_eps11.mp4', eps_des: 'اختيار طالوت ملكًا ومعجزة التابوت.' },
+            { num: 14, title: 'اصحاب الجنة', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Quran_stories_in_clay/Quran_stories_in_clay_eps12.mp4', eps_des: 'عبرة أصحاب الجنة من البخل.' },
+            { num: 15, title: 'الفقر', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Quran_stories_in_clay/Quran_stories_in_clay_eps13.mp4', eps_des: 'قصة الفقر واختبار الإيمان.' },
+            { num: 16, title: 'اصحاب الاخدود', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Quran_stories_in_clay/Quran_stories_in_clay_eps14.mp4', eps_des: 'صبر أصحاب الأخدود أمام النار.' },
+            { num: 17, title: 'الدعاء', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Quran_stories_in_clay/Quran_stories_in_clay_eps15.mp4', eps_des: 'قوة الدعاء وإجابة الله.' },
+            { num: 18, title: 'اصحاب القرية 1', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Quran_stories_in_clay/Quran_stories_in_clay_eps16.mp4', eps_des: 'دعوة أصحاب القرية للإيمان.' },
+            { num: 19, title: 'اصحاب القرية 2', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Quran_stories_in_clay/Quran_stories_in_clay_eps17.mp4', eps_des: 'عقاب أصحاب القرية للكفر.' },
+            { num: 20, title: 'ابليس والرجل الصالح', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Quran_stories_in_clay/Quran_stories_in_clay_eps18.mp4', eps_des: 'إغواء إبليس للرجل الصالح.' },
+            { num: 21, title: 'لقمان الحكيم', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Quran_stories_in_clay/Quran_stories_in_clay_eps19.mp4', eps_des: 'حكمة لقمان ونصائحه لابنه.' },
+            { num: 22, title: 'مؤمن ال فرعون', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Quran_stories_in_clay/Quran_stories_in_clay_eps20.mp4', eps_des: 'إيمان مؤمن آل فرعون سرًا.' },
+            { num: 23, title: 'موسى والخضر', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Quran_stories_in_clay/Quran_stories_in_clay_eps21.mp4', eps_des: 'لقاء موسى والخضر وأسراره.' },
+            { num: 24, title: 'قارون', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Quran_stories_in_clay/Quran_stories_in_clay_eps22.mp4', eps_des: 'غرور قارون وخسفه بالأرض.' },
+            { num: 25, title: 'سبأ', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Quran_stories_in_clay/Quran_stories_in_clay_eps23.mp4', eps_des: 'قصة سبأ وسد مأرب العظيم.' },
+            { num: 26, title: 'صاحب الجنتين', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Quran_stories_in_clay/Quran_stories_in_clay_eps24.mp4', eps_des: 'عبرة صاحب الجنتين من الكفر.' },
+            { num: 27, title: 'زينب بنت جحش', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Quran_stories_in_clay/Quran_stories_in_clay_eps25.mp4', eps_des: 'قصة زينب ونزول آية التبني.' }
+        ]
+    },
 
-    // // قصص الأنبياء بالصلصال
-    // 7: {
-    //     title: 'قصص الأنبياء بالصلصال',
-    //     description: 'قصص الأنبياء بالصلصال، رحلة إيمانية ممتعة للأطفال مع عبر أخلاقية.',
-    //     episodes: [
-    //         { num: 1, title: 'أغنية المقدمة', duration: '20 دقيقة', video: 'vid/Prophets_Claymation/Prophets_Claymation_eps1.mp4', eps_des: 'مقدمة موسيقية لقصص الأنبياء.' },
-    //         { num: 2, title: 'أدم', duration: '20 دقيقة', video: 'vid/Prophets_Claymation/Prophets_Claymation_eps2.mp4', eps_des: 'خلق آدم ودخوله الجنة.' },
-    //         { num: 3, title: 'أيوب', duration: '20 دقيقة', video: 'vid/Prophets_Claymation/Prophets_Claymation_eps3.mp4', eps_des: 'صبر أيوب على البلاء والشفاء.' },
-    //         { num: 4, title: 'عزير', duration: '20 دقيقة', video: 'vid/Prophets_Claymation/Prophets_Claymation_eps4.mp4', eps_des: 'معجزة إحياء عزير بعد موته.' },
-    //         { num: 5, title: 'هود', duration: '20 دقيقة', video: 'vid/Prophets_Claymation/Prophets_Claymation_eps5.mp4', eps_des: 'دعوة هود لقوم عاد وعقابهم.' },
-    //         { num: 6, title: 'نوح', duration: '20 دقيقة', video: 'vid/Prophets_Claymation/Prophets_Claymation_eps6.mp4', eps_des: 'بناء سفينة نوح والطوفان.' },
-    //         { num: 7, title: 'صالح', duration: '20 دقيقة', video: 'vid/Prophets_Claymation/Prophets_Claymation_eps7.mp4', eps_des: 'معجزة ناقة صالح وعقاب ثمود.' },
-    //         { num: 8, title: 'داود', duration: '20 دقيقة', video: 'vid/Prophets_Claymation/Prophets_Claymation_eps8.mp4', eps_des: 'معجزة داود في قتل جالوت.' },
-    //         { num: 9, title: 'يونس 1', duration: '20 دقيقة', video: 'vid/Prophets_Claymation/Prophets_Claymation_eps9.mp4', eps_des: 'دعوة يونس وابتلاع الحوت.' },
-    //         { num: 10, title: 'يونس 2', duration: '20 دقيقة', video: 'vid/Prophets_Claymation/Prophets_Claymation_eps10.mp4', eps_des: 'توبة يونس ونجاته من الحوت.' },
-    //         { num: 11, title: 'عيسى', duration: '20 دقيقة', video: 'vid/Prophets_Claymation/Prophets_Claymation_eps11.mp4', eps_des: 'ولادة عيسى ومعجزاته الإلهية.' },
-    //         { num: 12, title: 'ابراهيم', duration: '20 دقيقة', video: 'vid/Prophets_Claymation/Prophets_Claymation_eps12.mp4', eps_des: 'إبراهيم وتحطيم الأصنام.' },
-    //         { num: 13, title: 'اسماعيل', duration: '20 دقيقة', video: 'vid/Prophets_Claymation/Prophets_Claymation_eps13.mp4', eps_des: 'قصة إسماعيل وذبح الرؤيا.' },
-    //         { num: 14, title: 'شعيب', duration: '20 دقيقة', video: 'vid/Prophets_Claymation/Prophets_Claymation_eps14.mp4', eps_des: 'دعوة شعيب لقوم مدين.' },
-    //         { num: 15, title: 'يعقوب', duration: '20 دقيقة', video: 'vid/Prophets_Claymation/Prophets_Claymation_eps15.mp4', eps_des: 'قصة يعقوب وأبنائه.' },
-    //         { num: 16, title: 'يوسف', duration: '20 دقيقة', video: 'vid/Prophets_Claymation/Prophets_Claymation_eps16.mp4', eps_des: 'رؤيا يوسف وصبره في السجن.' },
-    //         { num: 17, title: 'زكريا', duration: '20 دقيقة', video: 'vid/Prophets_Claymation/Prophets_Claymation_eps17.mp4', eps_des: 'دعاء زكريا لولد يحيى.' },
-    //         { num: 18, title: 'سليمان 1', duration: '20 دقيقة', video: 'vid/Prophets_Claymation/Prophets_Claymation_eps18.mp4', eps_des: 'ملك سليمان وتسخير الجن.' },
-    //         { num: 19, title: 'سليمان 2', duration: '20 دقيقة', video: 'vid/Prophets_Claymation/Prophets_Claymation_eps19.mp4', eps_des: 'هدهد سليمان وملكة سبأ.' },
-    //         { num: 20, title: 'موسى', duration: '20 دقيقة', video: 'vid/Prophets_Claymation/Prophets_Claymation_eps20.mp4', eps_des: 'معجزات موسى أمام فرعون.' },
-    //         { num: 21, title: 'سيدنا محمد 1', duration: '20 دقيقة', video: 'vid/Prophets_Claymation/Prophets_Claymation_eps21.mp4', eps_des: 'طفولة النبي محمد صلى الله عليه وسلم.' },
-    //         { num: 22, title: 'سيدنا محمد 2', duration: '20 دقيقة', video: 'vid/Prophets_Claymation/Prophets_Claymation_eps22.mp4', eps_des: 'بعثة النبي ودعوته للإسلام.' },
-    //         { num: 23, title: 'الحجر الاسود', duration: '20 دقيقة', video: 'vid/Prophets_Claymation/Prophets_Claymation_eps23.mp4', eps_des: 'قصة الحجر الأسود وبناء الكعبة.' },
-    //         { num: 24, title: 'غار ثور 1', duration: '20 دقيقة', video: 'vid/Prophets_Claymation/Prophets_Claymation_eps24.mp4', eps_des: 'هجرة النبي لغار ثور.' },
-    //         { num: 25, title: 'غار ثور 2', duration: '20 دقيقة', video: 'vid/Prophets_Claymation/Prophets_Claymation_eps25.mp4', eps_des: 'معجزة في غار ثور وحماية الله.' }
-    //     ]
-    // },
-
-    // // المبشرون بالجنة بالصلصال
-    // 8: {
-    //     title: 'المبشرون بالجنة بالصلصال',
-    //     description: 'قصص العشرة المبشرين بالجنة بالصلصال، قدوة إيمانية ممتعة للأطفال.',
-    //     episodes: [
-    //         { num: 1, title: 'اغنية المقدمة', duration: '20 دقيقة', video: 'vid/Mubasharoon_Claymation/Mubasharoon_Claymation_eps1.mp4', eps_des: 'مقدمة موسيقية للمبشرين بالجنة.' },
-    //         { num: 2, title: 'اغنية النهاية', duration: '20 دقيقة', video: 'vid/Mubasharoon_Claymation/Mubasharoon_Claymation_eps2.mp4', eps_des: 'خاتمة موسيقية تعزز العبر الإيمانية.' },
-    //         { num: 3, title: 'ابو بكر الصديق 1', duration: '20 دقيقة', video: 'vid/Mubasharoon_Claymation/Mubasharoon_Claymation_eps3.mp4', eps_des: 'إيمان أبو بكر وصدقه مع النبي.' },
-    //         { num: 4, title: 'ابو بكر الصديق 2', duration: '20 دقيقة', video: 'vid/Mubasharoon_Claymation/Mubasharoon_Claymation_eps4.mp4', eps_des: 'مساهمة أبو بكر في الإسلام.' },
-    //         { num: 5, title: 'ابو بكر الصديق 3', duration: '20 دقيقة', video: 'vid/Mubasharoon_Claymation/Mubasharoon_Claymation_eps5.mp4', eps_des: 'خلافة أبو بكر وعبرة الصدق.' },
-    //         { num: 6, title: 'عمر بن الخطاب 1', duration: '20 دقيقة', video: 'vid/Mubasharoon_Claymation/Mubasharoon_Claymation_eps6.mp4', eps_des: 'إسلام عمر وشجاعته.' },
-    //         { num: 7, title: 'عمر بن الخطاب 2', duration: '20 دقيقة', video: 'vid/Mubasharoon_Claymation/Mubasharoon_Claymation_eps7.mp4', eps_des: 'فتوحات عمر وعدالته.' },
-    //         { num: 8, title: 'عمر بن الخطاب 3', duration: '20 دقيقة', video: 'vid/Mubasharoon_Claymation/Mubasharoon_Claymation_eps8.mp4', eps_des: 'شهادة عمر بعبرة التقوى.' },
-    //         { num: 9, title: 'عثمان بن عفان 1', duration: '20 دقيقة', video: 'vid/Mubasharoon_Claymation/Mubasharoon_Claymation_eps9.mp4', eps_des: 'إسلام عثمان وكرمه.' },
-    //         { num: 10, title: 'عثمان بن عفان 2', duration: '20 دقيقة', video: 'vid/Mubasharoon_Claymation/Mubasharoon_Claymation_eps10.mp4', eps_des: 'خلافة عثمان وتجميع القرآن.' },
-    //         { num: 11, title: 'على بن ابى طالب 1', duration: '20 دقيقة', video: 'vid/Mubasharoon_Claymation/Mubasharoon_Claymation_eps11.mp4', eps_des: 'إسلام علي وشجاعته في بدر.' },
-    //         { num: 12, title: 'على بن ابى طالب 2', duration: '20 دقيقة', video: 'vid/Mubasharoon_Claymation/Mubasharoon_Claymation_eps12.mp4', eps_des: 'خلافة علي وعبرة العدل.' },
-    //         { num: 13, title: 'عبد الرحمن بن عوف', duration: '20 دقيقة', video: 'vid/Mubasharoon_Claymation/Mubasharoon_Claymation_eps13.mp4', eps_des: 'كرم عبد الرحمن وتجارته.' },
-    //         { num: 14, title: 'ابو عبيدة بن الجراح', duration: '20 دقيقة', video: 'vid/Mubasharoon_Claymation/Mubasharoon_Claymation_eps14.mp4', eps_des: 'شجاعة أبو عبيدة في الفتوحات.' },
-    //         { num: 15, title: 'طلحة بن عبيد الله', duration: '20 دقيقة', video: 'vid/Mubasharoon_Claymation/Mubasharoon_Claymation_eps15.mp4', eps_des: 'بطولة طلحة في أحد.' },
-    //         { num: 16, title: 'سعد بن ابى وقاص', duration: '20 دقيقة', video: 'vid/Mubasharoon_Claymation/Mubasharoon_Claymation_eps16.mp4', eps_des: 'فتح سعد للعراق ودعوته.' },
-    //         { num: 17, title: 'سعيد بن زيد', duration: '20 دقيقة', video: 'vid/Mubasharoon_Claymation/Mubasharoon_Claymation_eps17.mp4', eps_des: 'إيمان سعيد وجهاده.' },
-    //         { num: 18, title: 'السيدة أسيا', duration: '20 دقيقة', video: 'vid/Mubasharoon_Claymation/Mubasharoon_Claymation_eps18.mp4', eps_des: 'إيمان آسية زوجة فرعون.' },
-    //         { num: 19, title: 'السيدة خديجة', duration: '20 دقيقة', video: 'vid/Mubasharoon_Claymation/Mubasharoon_Claymation_eps19.mp4', eps_des: 'دعم خديجة للنبي.' },
-    //         { num: 20, title: 'السيدة فاطمة', duration: '20 دقيقة', video: 'vid/Mubasharoon_Claymation/Mubasharoon_Claymation_eps20.mp4', eps_des: 'قصة فاطمة الزهراء وصبرها.' }
-    //     ]
-    // }
+    // المبشرون بالجنة بالصلصال
+    8: {
+        title: 'المبشرون بالجنة بالصلصال',
+        description: 'قصص العشرة المبشرين بالجنة بالصلصال، قدوة إيمانية ممتعة للأطفال.',
+        episodes: [
+            { num: 1, title: 'اغنية المقدمة', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Stories_of_those_promised_Paradise%2C_written_in_clay/Stories_of_those_promised_Paradise%2C_written_in_clay_intro.mp3', eps_des: 'مقدمة موسيقية للمبشرين بالجنة.' },
+            { num: 2, title: 'اغنية النهاية', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Stories_of_those_promised_Paradise%2C_written_in_clay/Stories_of_those_promised_Paradise%2C_written_in_clay_outro.mp3', eps_des: 'خاتمة موسيقية تعزز العبر الإيمانية.' },
+            { num: 3, title: 'ابو بكر الصديق 1', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Stories_of_those_promised_Paradise%2C_written_in_clay/Stories_of_those_promised_Paradise%2C_written_in_clay_eps1.mp4', eps_des: 'إيمان أبو بكر وصدقه مع النبي.' },
+            { num: 4, title: 'ابو بكر الصديق 2', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Stories_of_those_promised_Paradise%2C_written_in_clay/Stories_of_those_promised_Paradise%2C_written_in_clay_eps2.mp4', eps_des: 'مساهمة أبو بكر في الإسلام.' },
+            { num: 5, title: 'ابو بكر الصديق 3', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Stories_of_those_promised_Paradise%2C_written_in_clay/Stories_of_those_promised_Paradise%2C_written_in_clay_eps3.mp4', eps_des: 'خلافة أبو بكر وعبرة الصدق.' },
+            { num: 6, title: 'عمر بن الخطاب 1', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Stories_of_those_promised_Paradise%2C_written_in_clay/Stories_of_those_promised_Paradise%2C_written_in_clay_eps4.mp4', eps_des: 'إسلام عمر وشجاعته.' },
+            { num: 7, title: 'عمر بن الخطاب 2', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Stories_of_those_promised_Paradise%2C_written_in_clay/Stories_of_those_promised_Paradise%2C_written_in_clay_eps5.mp4', eps_des: 'فتوحات عمر وعدالته.' },
+            { num: 8, title: 'عمر بن الخطاب 3', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Stories_of_those_promised_Paradise%2C_written_in_clay/Stories_of_those_promised_Paradise%2C_written_in_clay_eps6.mp4', eps_des: 'شهادة عمر بعبرة التقوى.' },
+            { num: 9, title: 'عثمان بن عفان 1', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Stories_of_those_promised_Paradise%2C_written_in_clay/Stories_of_those_promised_Paradise%2C_written_in_clay_eps7.mp4', eps_des: 'إسلام عثمان وكرمه.' },
+            { num: 10, title: 'عثمان بن عفان 2', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Stories_of_those_promised_Paradise%2C_written_in_clay/Stories_of_those_promised_Paradise%2C_written_in_clay_eps8.mp4', eps_des: 'خلافة عثمان وتجميع القرآن.' },
+            { num: 11, title: 'على بن ابى طالب 1', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Stories_of_those_promised_Paradise%2C_written_in_clay/Stories_of_those_promised_Paradise%2C_written_in_clay_eps9.mp4', eps_des: 'إسلام علي وشجاعته في بدر.' },
+            { num: 12, title: 'على بن ابى طالب 2', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Stories_of_those_promised_Paradise%2C_written_in_clay/Stories_of_those_promised_Paradise%2C_written_in_clay_eps10.mp4', eps_des: 'خلافة علي وعبرة العدل.' },
+            { num: 13, title: 'عبد الرحمن بن عوف', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Stories_of_those_promised_Paradise%2C_written_in_clay/Stories_of_those_promised_Paradise%2C_written_in_clay_eps11.mp4', eps_des: 'كرم عبد الرحمن وتجارته.' },
+            { num: 14, title: 'ابو عبيدة بن الجراح', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Stories_of_those_promised_Paradise%2C_written_in_clay/Stories_of_those_promised_Paradise%2C_written_in_clay_eps12.mp4', eps_des: 'شجاعة أبو عبيدة في الفتوحات.' },
+            { num: 15, title: 'طلحة بن عبيد الله', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Stories_of_those_promised_Paradise%2C_written_in_clay/Stories_of_those_promised_Paradise%2C_written_in_clay_eps13.mp4', eps_des: 'بطولة طلحة في أحد.' },
+            { num: 16, title: 'سعد بن ابى وقاص', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Stories_of_those_promised_Paradise%2C_written_in_clay/Stories_of_those_promised_Paradise%2C_written_in_clay_eps14.mp4', eps_des: 'فتح سعد للعراق ودعوته.' },
+            { num: 17, title: 'سعيد بن زيد', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Stories_of_those_promised_Paradise%2C_written_in_clay/Stories_of_those_promised_Paradise%2C_written_in_clay_eps15.mp4', eps_des: 'إيمان سعيد وجهاده.' },
+            { num: 18, title: 'السيدة أسيا', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Stories_of_those_promised_Paradise%2C_written_in_clay/Stories_of_those_promised_Paradise%2C_written_in_clay_eps16.mp4', eps_des: 'إيمان آسية زوجة فرعون.' },
+            { num: 19, title: 'السيدة خديجة', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Stories_of_those_promised_Paradise%2C_written_in_clay/Stories_of_those_promised_Paradise%2C_written_in_clay_eps17.mp4', eps_des: 'دعم خديجة للنبي.' },
+            { num: 20, title: 'السيدة فاطمة', duration: '20 دقيقة', video: 'https://file.garden/aYOOHhOBlkBEdoxq/Stories_of_those_promised_Paradise%2C_written_in_clay/Stories_of_those_promised_Paradise%2C_written_in_clay_eps18.mp4', eps_des: 'قصة فاطمة الزهراء وصبرها.' }
+        ]
+    }
 };
